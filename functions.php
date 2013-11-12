@@ -11,6 +11,15 @@ require_once (get_stylesheet_directory() . '/requires-agenda.php');
 //Adiciona as Minhas Opções
 require_once (get_stylesheet_directory() . '/options/admin_options.php');
 
+
+/**
+* Adiciona um tamanho de imagem
+*
+*/
+if ( function_exists( 'add_image_size' ) ) { 
+        add_image_size( 'destaqueimg', 310, 150, true );
+}
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -45,7 +54,7 @@ function celulas_theme_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.

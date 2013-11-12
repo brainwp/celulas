@@ -18,16 +18,31 @@ get_header(); ?>
 		
 		<div class="superior-home">
 			<div class="agenda-home">
+					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h1 class="title-query-link">Eventos</h1></a>	
 					<?php 
 					//Adiciona o Loop CPT Agenda
 					get_template_part( 'loop-agenda-home');
 					?>
 			</div>
+			
 			<div class="page-destaque-home">
-					<?php do_action( 'before_sidebar' ); ?>
-					<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-					<?php endif; // end sidebar widget area ?>
+				<?php 
+                /* Pega a página selecionada para o box */
+				$box01 = get_option ('mo_box01');
+				?>				
+
+				<?php query_posts('pagename='.$box01.'&showposts=1'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="header-box">
+						<h3 class="titulo-header-box"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					</div><!-- #header-box -->
+								<div class="thumb-destaque">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('destaqueimg'); ?></a>
+								</div><!-- .thumb-destaque -->
+					<?php the_excerpt(); ?>
+					<a class="veja" href="<?php the_permalink(); ?>">Veja &gt;&gt;</a>
+					<?php endwhile; endif; wp_reset_query(); ?>
 			</div>
+			
 			<div class="banco-celulas-home">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php  if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>

@@ -47,20 +47,19 @@ array( "type" => "close"),
 	"type" => "section"),
 array( "type" => "open"),
 
-array( "name" => "Agenda | Eventos exibidos",
+array( "name" => "Eventos exibidos",
 	"desc" => "Adicione a quantidade de Eventos exibidos na Home",
 	"id" => $shortname."_qtd_eventos",
 	"type" => "select",  
     "options" => array('3','4','5','6','7','8'),  
     "std" => "3"),
-	
  
-array( "name" => "Not&iacute;cias | Posts exibidos",
-	"desc" => "Adicione a quantidade de Posts exibidos na Home",
-	"id" => $shortname."_qtd_noticias",
-	"type" => "select",  
-    "options" => array('3','4','5','6','7','8','9','10'),  
-    "std" => "3"),
+array( "name" => "Destaque Box",
+    "desc" => "Selecione a Pagina em Destaque do Box da Home",  
+    "id" => $shortname."_box01",
+    "type" => "page",  
+    "options" => array(),  
+    "std" => ""),
 	
 array( "type" => "close"),
 
@@ -185,6 +184,26 @@ case 'textarea':
  <small><?php echo $value['desc']; ?></small><div class="clearfix"></div>
  
  </div>
+ 
+ <?php
+break;
+ 
+case 'page':
+?>
+
+<div class="rm_input rm_select">
+<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
+<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
+<option><?php echo attribute_escape('Selecione um Destaque'); ?></option>
+<?php
+$paginas = get_pages(); 
+foreach ($paginas as $pagina) { ?>
+<option <?php if (get_settings( $value['id'] ) == $pagina->post_name) { echo 'selected="selected"'; } ?>><?php echo $pagina->post_name; ?></option><?php } ?>
+</select>
+
+        <small><?php echo $value['desc']; ?></small><div class="clearfix"></div>
+</div>
+ 
   
 <?php
 break;
