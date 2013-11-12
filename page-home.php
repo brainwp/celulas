@@ -7,7 +7,9 @@ Template Name: Home
 get_header(); ?>
 
 
-	<div class="slider-home"></div>
+	<div class="slider-home">
+	<?php if(function_exists("insert_post_highlights")) insert_post_highlights(); ?>
+	</div>
 	<div class="mapa-home"></div>
 	
 	<div class="conteudo-home">
