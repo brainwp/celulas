@@ -11,6 +11,19 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<div id="footer-widget-area" role="complementary">
+					
+					<!-- ----------------- Mapa DO SITE ----------------- -->
+					<div id="coluna-sitemap">
+					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-1' ) ); ?>
+				  </div>
+				  <div id="coluna-sitemap" class="ultima">
+				 <?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
+				  </div>
+
+		</div><!-- footer-widget-area -->
+	
 		<div class="site-info">
 			<?php do_action( 'celulas_theme_credits' ); ?>
 			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'celulas-theme' ), 'WordPress' ); ?></a>

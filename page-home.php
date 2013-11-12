@@ -15,9 +15,23 @@ get_header(); ?>
 	<div class="conteudo-home">
 		
 		<div class="superior-home">
-			<div class="agenda-home"></div>
-			<div class="page-destaque-home"></div>
-			<div class="banco-celulas"></div>
+			<div class="agenda-home">
+					<?php 
+					//Adiciona o Loop CPT Agenda
+					get_template_part( 'loop-agenda-home');
+					?>
+			</div>
+			<div class="page-destaque-home">
+					<?php do_action( 'before_sidebar' ); ?>
+					<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+					<?php endif; // end sidebar widget area ?>
+			</div>
+			<div class="banco-celulas">
+					<?php do_action( 'before_sidebar' ); ?>
+					<?php  if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
+					<?php endif; // end sidebar widget area ?>
+			</div>
+
 		</div><!-- .superior-home -->
 		
 		<div class="inferior-home">
@@ -31,6 +45,4 @@ get_header(); ?>
 		</div><!-- .inferior-home -->	
 		
 	</div><!-- .conteudo-home -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

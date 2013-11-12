@@ -4,6 +4,11 @@
  *
  * @package Celulas Theme
  */
+ 
+ 
+ //Adiciona o CustomPostType Agenda
+require_once (get_stylesheet_directory() . '/requires-agenda.php');
+
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -43,11 +48,19 @@ function celulas_theme_setup() {
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
-	 */
-	register_nav_menus( array(
+	 */	
+		add_action( 'init', 'register_my_menus' );
+		 
+		function register_my_menus() {
+		register_nav_menus(
+		array(
 		'primary' => __( 'Primary Menu', 'celulas-theme' ),
-	) );
-
+		'rodape-menu-1' => __( 'Menu Rodape 1', 'celulas-theme' ),
+		'rodape-menu-2' => __( 'Menu Rodape 2', 'celulas-theme' )
+		)
+		);
+		}
+	
 	/**
 	 * Enable support for Post Formats
 	 */
@@ -62,22 +75,31 @@ function celulas_theme_setup() {
 	) ) );
 }
 endif; // celulas_theme_setup
+
 add_action( 'after_setup_theme', 'celulas_theme_setup' );
 
 /**
  * Register widgetized area and update sidebar with default widgets
  */
-function celulas_theme_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'celulas-theme' ),
+		'name'          => __( 'Sidebar Home', 'celulas-theme' ),
+		'description' => __( 'Sidebar Home', 'celulas-theme' ),
 		'id'            => 'sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
+	register_sidebar( array(
+	    'name'          => __( 'Sidebar Home 2', 'celulas-theme' ),
+		'description' => __( 'Sidebar Home 2', 'celulas-theme' ),
+		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-}
-add_action( 'widgets_init', 'celulas_theme_widgets_init' );
 
 /**
  * Enqueue scripts and styles
