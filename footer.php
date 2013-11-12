@@ -32,6 +32,10 @@
 		</div><!-- direita-footer-->
 	
 		<div class="site-info">
+			
+				<p><?php echo stripslashes (get_option('mo_footer_end')); ?></p>
+				<p><?php echo stripslashes (get_option('mo_footer_mail')); ?></p>
+			
 			<?php do_action( 'celulas_theme_credits' ); ?>
 			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'celulas-theme' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

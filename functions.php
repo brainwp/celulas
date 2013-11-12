@@ -5,10 +5,11 @@
  * @package Celulas Theme
  */
  
- 
  //Adiciona o CustomPostType Agenda
 require_once (get_stylesheet_directory() . '/requires-agenda.php');
 
+//Adiciona as Minhas Opções
+require_once (get_stylesheet_directory() . '/options/admin_options.php');
 
 /**
  * Set the content width based on the theme's design and stylesheet.

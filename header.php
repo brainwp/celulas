@@ -60,6 +60,13 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'celulas-theme' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'celulas-theme' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		
+					<div id="midias-sociais">
+					<a href="<?php echo stripslashes (get_option('mo_url_twitter')); ?>" class="link_twitter" target="_blank"></a>
+					<a href="<?php echo stripslashes (get_option('mo_url_face')); ?>" class="link_facebook" target="_blank"></a>
+					<a href="<?php echo stripslashes (get_option('mo_url_youtube')); ?>" class="link_youtube" target="_blank"></a>
+					</div>
+		
 		</nav><!-- #access -->
 	</header><!-- #masthead -->
 
