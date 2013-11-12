@@ -3,7 +3,7 @@ Theme Name: Celulas Theme
 Theme URI: http://underscores.me/
 Author: Brasa Team
 Author URI: http://www.brasa.art.br
-Description: Tema WordPress para Células de Transformação
+Description: Tema WordPress para Celulas de Transformacao
 Version: 1.0
 License: GNU General Public License
 License URI: license.txt
@@ -12,7 +12,6 @@ Domain Path: /languages/
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
 Celulas Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
@@ -110,8 +109,8 @@ textarea {
 	line-height: 1.5;
 }
 
-body {
-	background: url("images/home.jpg") no-repeat center top;
+body .page-template-page-home-php {
+	/*background: url("images/home.jpg") no-repeat center top; */
 	height: 2096px;
 }
 
@@ -650,45 +649,58 @@ object {
 	height: auto; 
 }
 
-.menu {
-	width:100%;
-	height: 30px;
-	clear: both;
-}
-
 .slider-home {
 	width:100%;
-	height: 400px;
+	height: 360px;
 }
 
 .mapa-home {
 	width:100%;
 	height: 400px;
+	background: none repeat scroll 0 0 #CCCCCC;
+	text-align: center;
+	font-size: 2em;
 }
 
 .conteudo-home {
-
+	width:100%;
+	min-height: 300px;
+	margin: 0;
 }
 
 .superior-home {
-
+	width:100%;
+	min-height: 300px;
+	margin: 0;
 }
 
 .agenda-home {
-
+width:30%;
+float: left;
+margin-right: 2%;
 }
 
 .page-destaque-home {
-
+width:30%;
+float: left;
+margin-right: 2%;
 }
 
 .banco-celulas-home {
-
+width:30%;
+float: left;
+margin-right: 0;
 }
 
 .inferior-home {
-
+	width:100%;
+	min-height: 300px;
+	margin: 0;
+	background: none repeat scroll 0 0 #CCCCCC;
+	text-align: center;
+	font-size: 2em;
 }
+
 
 .cada-post-home {
 
@@ -708,18 +720,195 @@ object {
 
 /*  -------     Footer    ------  */
 
-.esquerda-footer {
 
+#colophon {
+    clear: both;
 }
 
-.menu-link-footer {
+.coluna-sitemap-esquerda {
+    float: left;
+    line-height: 1.6em;
+    margin-left: 20px;
+    width: 280px;
+	position: absolute;
+	}
+	
+.coluna-sitemap-esquerda ul {
+    list-style: none outside none;
+    margin: 0;
+}
 
+.coluna-sitemap-esquerda a {
+    color: #B3CB43;
+    font-family: Arial ,sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.coluna-sitemap-direita {
+    float: right;
+    line-height: 1.6em;
+    margin-left: 20px;
+    width: 280px;
+	}
+	
+.coluna-sitemap-direita ul {
+    list-style: none outside none;
+    margin: 0;
+}
+
+.coluna-sitemap-direita a {
+    color: #B3CB43;
+    font-family: Arial ,sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.esquerda-footer {
+    min-height: 230px;
+    padding: 0;
+    width: 60%;
+    overflow: hidden;
+	float: left;
 }
 
 .direita-footer {
 
+    min-height: 230px;
+    padding: 0;
+    width: 40%;
+    overflow: hidden;
+	float: left;
 }
 
 .parceiros-footer {
+  background: none repeat scroll 0 0 #F8C373;
+    font-size: 2em;
+    margin: 0;
+    min-height: 300px;
+    text-align: center;
+}
 
+
+.site-info {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*  -------    Agenda    ------  */
+
+#agenda-geral {
+    margin: -10px 0 0;
+    padding: 0;
+}
+#agenda-geral .evento-agenda {
+    width: 280px;
+}
+#agenda-geral .evento-agenda-passado {
+    opacity: 0.5;
+    width: 280px;
+}
+#agenda-geral .evento-agenda-escondido {
+    display: none;
+}
+#agenda-geral .data-evento-agenda {
+    background: none repeat scroll 0 0 #007B5B;
+    color: #FFFFFF;
+    float: left;
+    height: 45px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 45px;
+}
+#agenda-geral .data-evento-agenda-single {
+    background: none repeat scroll 0 0 #007B5B;
+    color: #FFFFFF;
+    height: 45px;
+    margin: 10px 15px 0 0;
+    padding: 7px;
+    position: absolute;
+    width: 45px;
+}
+#agenda-geral .titulo-evento-agenda {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-size: 1.1em;
+    height: 50px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 2px 2px 8px;
+    width: 205px;
+}
+#agenda-geral .titulo-evento-agenda-passado {
+    background: none repeat scroll 0 0 #DDDDDD;
+    float: left;
+    font-size: 1.1em;
+    height: 50px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 2px 2px 8px;
+    width: 205px;
+}
+#cada-dia {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 0 20px 20px 0;
+    min-height: 210px;
+    padding: 15px 15px 5px;
+    width: 260px;
+}
+#cada-dia.passado {
+    background: none repeat scroll 0 0 #DDDDDD;
+    opacity: 0.5;
+}
+#conteudo-dia {
+    float: left;
+    margin: 10px 0 0;
+    width: 255px;
+}
+
+#mes-agenda {
+    color: #B3CB43 !important;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin: -4px 0 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#dia-agenda {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 2.3em;
+    margin: 0 auto;
+    text-align: center;
+}
+#leia-mais-agenda {
+    background: none repeat scroll 0 0 #BABABA;
+    float: right;
+    font-family: 'Passion One',sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin-right: 6px;
+    margin-top: 7px;
+    padding: 0 6px;
+    text-transform: uppercase;
+    width: 55px;
+}
+#leia-mais-agenda.archive {
+    margin-bottom: 2px;
+    margin-right: -2px;
+    margin-top: -15px;
+}
+#leia-mais-agenda a {
+    color: #FFFFFF;
 }

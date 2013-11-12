@@ -56,12 +56,11 @@
 			
 		</div><!--  .imagem-header -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="access" class="main-navigation" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'celulas-theme' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'celulas-theme' ); ?></a>
-
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		</nav><!-- #access -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

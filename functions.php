@@ -79,7 +79,7 @@ endif; // celulas_theme_setup
 add_action( 'after_setup_theme', 'celulas_theme_setup' );
 
 /**
- * Register widgetized area and update sidebar with default widgets
+ * Register widgetized areas
  */
 	register_sidebar( array(
 		'name'          => __( 'Sidebar Home', 'celulas-theme' ),
@@ -106,7 +106,7 @@ add_action( 'after_setup_theme', 'celulas_theme_setup' );
  */
 function celulas_theme_scripts() {
 	wp_enqueue_style( 'celulas-theme-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'twentyeleven-style',  get_template_directory_uri() . '/twentyeleven.css' );
+	wp_enqueue_style( 'celulas-theme-style',  get_template_directory_uri() . '/twentyeleven.css' );
 	
 	wp_enqueue_script( 'celulas-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'celulas-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

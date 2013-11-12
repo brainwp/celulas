@@ -12,17 +12,24 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		
-		<div id="footer-widget-area" role="complementary">
+		<div class="esquerda-footer">
 					
 					<!-- ----------------- Mapa DO SITE ----------------- -->
-					<div id="coluna-sitemap">
+					<div class="coluna-sitemap-esquerda">
 					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-1' ) ); ?>
-				  </div>
-				  <div id="coluna-sitemap" class="ultima">
-				 <?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
-				  </div>
+					</div>
+					
+					<div class="coluna-sitemap-direita">
+					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
+					</div>
 
-		</div><!-- footer-widget-area -->
+		</div><!-- esquerda-footer-->
+		
+		<div class="direita-footer">
+			<div class="parceiros-footer">
+			<p>Aqui entra slider de parceiros </p>
+			</div>	
+		</div><!-- direita-footer-->
 	
 		<div class="site-info">
 			<?php do_action( 'celulas_theme_credits' ); ?>

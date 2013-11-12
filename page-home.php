@@ -10,7 +10,9 @@ get_header(); ?>
 	<div class="slider-home">
 	<?php if(function_exists("insert_post_highlights")) insert_post_highlights(); ?>
 	</div>
-	<div class="mapa-home"></div>
+	<div class="mapa-home">
+	<p>Aqui entra o mapa!</p>
+	</div>
 	
 	<div class="conteudo-home">
 		
@@ -26,7 +28,7 @@ get_header(); ?>
 					<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 					<?php endif; // end sidebar widget area ?>
 			</div>
-			<div class="banco-celulas">
+			<div class="banco-celulas-home">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php  if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
 					<?php endif; // end sidebar widget area ?>
@@ -35,7 +37,7 @@ get_header(); ?>
 		</div><!-- .superior-home -->
 		
 		<div class="inferior-home">
-			
+				<p>Aqui entra as Noticias de todas as Celulas</p>
 			<div class="cada-post">
 				<div class="cada-post-thumb"></div>
 				<div class="cada-post-content"></div>
