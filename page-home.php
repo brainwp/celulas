@@ -11,7 +11,9 @@ get_header(); ?>
 	<?php if(function_exists("insert_post_highlights")) insert_post_highlights(); ?>
 	</div>
 	<div class="mapa-home">
-	<p>Aqui entra o mapa!</p>
+<div class="fluid-wrapper">
+<iframe src="http://mapeamento.maracatu.org.br/#lat=-8.028398239533194&lng=-34.88566892187515&zoom=13" width="980" height="300"></iframe>
+</div>
 	</div>
 	
 	<div class="conteudo-home">

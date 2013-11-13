@@ -795,6 +795,18 @@ a.link_youtube {
 	font-size: 2em;
 }
 
+#search {
+display: none !important;
+}
+
+
+#blog-title {
+display: none !important;
+}
+
+.map-menu-top {
+display: none !important;
+}
 
 .fluid-wrapper {
     position: relative;
