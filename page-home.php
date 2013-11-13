@@ -39,7 +39,7 @@ get_header(); ?>
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('destaqueimg'); ?></a>
 								</div><!-- .thumb-destaque -->
 					<?php the_excerpt(); ?>
-					<a class="veja" href="<?php the_permalink(); ?>">Veja &gt;&gt;</a>
+					<a class="veja" href="<?php the_permalink(); ?>">Leia mais &gt;&gt;</a>
 					<?php endwhile; endif; wp_reset_query(); ?>
 			</div>
 			
