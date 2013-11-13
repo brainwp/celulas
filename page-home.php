@@ -12,7 +12,7 @@ get_header(); ?>
 	</div>
 	<div class="mapa-home">
 <div class="fluid-wrapper">
-<iframe src="http://mapa.wp-brasil.org" width="980" height="300"></iframe>
+<iframe src="http://gator3131.hostgator.com/~luwkas/isabelsouzalima.com/#lat=-23.51688734846483&lng=-46.09135739843748&zoom=9" width="980" height="300"></iframe>
 </div>
 	</div>
 	
@@ -45,7 +45,7 @@ get_header(); ?>
 			
 			<div class="banco-celulas-home">
 					<?php do_action( 'before_sidebar' ); ?>
-					<?php  if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
+					<?php  if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 					<?php endif; // end sidebar widget area ?>
 			</div>
 
