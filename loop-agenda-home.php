@@ -1,7 +1,10 @@
 <!-- Loop do CPT Agenda para Sidebar's-->
 
 <div id="agenda-geral">
-	
+					<?php 
+                /* Pega a página selecionada para o box */
+				$qtd_eventos = get_option ('mo_qtd_eventos');
+				?>			
 				<!-- Inicio Loop -->
 <?php $dias = array(); ?>				
 				<?php

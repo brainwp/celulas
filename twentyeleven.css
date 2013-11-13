@@ -823,7 +823,7 @@ p img,
 	border: none;
 }
 img#wpstats {
-	display: block;
+	display:none;
 	margin: 0 auto 1.625em;
 }
 #content .gallery-columns-4 .gallery-item {

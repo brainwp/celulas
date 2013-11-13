@@ -32,14 +32,11 @@
 		</div><!-- direita-footer-->
 	
 		<div class="site-info">
-			
-				<p><?php echo stripslashes (get_option('mo_footer_end')); ?></p>
-				<p><?php echo stripslashes (get_option('mo_footer_mail')); ?></p>
-			
 			<?php do_action( 'celulas_theme_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'celulas-theme' ), 'WordPress' ); ?></a>
+			<?php echo stripslashes (get_option('mo_footer_end')); ?> | <?php echo stripslashes (get_option('mo_footer_mail')); ?> | 
+			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Desenvolvido com %s', 'celulas-theme' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'celulas-theme' ), 'Celulas Theme', '<a href="http://www.brasa.art.br" rel="designer">Brasa Team</a>' ); ?>
+			<?php printf( __( 'Tema %1$s por %2$s.', 'celulas-theme' ), 'Celulas Theme', '<a href="http://www.brasa.art.br" rel="designer">Brasa</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

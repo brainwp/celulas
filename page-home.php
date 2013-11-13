@@ -12,7 +12,7 @@ get_header(); ?>
 	</div>
 	<div class="mapa-home">
 <div class="fluid-wrapper">
-<iframe src="http://mapeamento.maracatu.org.br/#lat=-8.028398239533194&lng=-34.88566892187515&zoom=13" width="980" height="300"></iframe>
+<iframe src="http://mapa.wp-brasil.org" width="980" height="300"></iframe>
 </div>
 	</div>
 	
@@ -20,7 +20,7 @@ get_header(); ?>
 		
 		<div class="superior-home">
 			<div class="agenda-home">
-					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h1 class="title-query-link">Eventos</h1></a>	
+					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h3 class="title-query-link">Eventos</h3></a>	
 					<?php 
 					//Adiciona o Loop CPT Agenda
 					get_template_part( 'loop-agenda-home');
@@ -34,9 +34,7 @@ get_header(); ?>
 				?>				
 
 				<?php query_posts('pagename='.$box01.'&showposts=1'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="header-box">
-						<h3 class="titulo-header-box"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					</div><!-- #header-box -->
+						<a  class="query-agenda" href="<?php the_permalink(); ?>"><h3 class="title-query-link"><?php the_title(); ?></h3></a>
 								<div class="thumb-destaque">
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('destaqueimg'); ?></a>
 								</div><!-- .thumb-destaque -->
