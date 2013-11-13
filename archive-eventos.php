@@ -6,23 +6,11 @@ Template name: Agenda
 get_header(); ?>
 
 <div id="container">
-		<div id="area-select" class="agenda">
-		<h2 class="filtro"><?php _e('Filtro'); ?></h2>
-				<form>
-				<select name="tag-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-				<option value='#'>Munic&iacute;pios</option>
-				<?php $taxonomies = array('cat_agenda');
-				$args = array('orderby'=>'name','hide_empty'=>true);
-				echo get_terms_dropdown($taxonomies, $args); ?>
-				</select>
-				</form>
-		</div><!-- #area-select -->		
+	
 	<div id="content" role="main">
 					<div id="resumo">	
 			<h1 class="category-agenda">EVENTOS</h1>
-        </div><!-- #resumo -->
-		
-        <div id="primeira-linha">
+				</div><!-- #resumo -->
             <!-- Inicio Loop Agenda --> 
   <?php
                     
@@ -161,8 +149,7 @@ get_header(); ?>
                     <?php } ?>
             <?php endwhile; ?>
             <!-- Fim Loop -->
-        
-        </div><!-- #primeira-linha -->
+
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
 			<?php 
 			global $wp_query;  
