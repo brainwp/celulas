@@ -16,7 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_directory') ?>/twentyeleven.css" />
 <!-- Google Web Font -->
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic|Oswald:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic|Oswald:400' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
