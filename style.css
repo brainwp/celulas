@@ -82,13 +82,7 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
-a:focus {
-	outline: thin dotted;
-}
-a:hover,
-a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
-	outline: 0;
-}
+
 a img {
 	border: 0;
 }
@@ -109,9 +103,22 @@ textarea {
 	line-height: 1.5;
 }
 
-body .page-template-page-home-php {
-	/*background: url("images/home.jpg") no-repeat center top; */
+body.page-template-page-home-php {
+	/* background: url("images/home.jpg") no-repeat center top; */
 	height: 2096px;
+}
+
+a,  a:visited {
+color: #00A3DA;
+text-decoration: none;
+}
+
+a:hover {
+color: #0072B1
+}
+
+a:active, a:focus {
+color: #00A3DA;
 }
 
 /* Headings */
@@ -635,7 +642,23 @@ object {
 	max-width: 985px;
 }
 
+#content-home {
+	width: 100%;
+}
+
+#content {
+margin: 0;
+padding: 0;
+}
+
 /*  -------     Header    ------  */
+
+#masthead {
+    padding-bottom: 0;
+    position: relative;
+    z-index: 9999;
+	margin-bottom: 33px;
+}
 
 .logo-header {
 	text-indent: -999999px;
@@ -652,11 +675,10 @@ object {
 }
 
 #midias-sociais {
-    float: right;
-    height: 34px;
-    margin-right: 17px;
-    margin-top: -2px;
-    width: 113px;
+   float: right;
+    height: 40px;
+    width: 50px;
+	padding-top: 3px;
 }
 
 
@@ -691,24 +713,21 @@ a.link_youtube {
 -------------------------------------------------------------- */
 
 #access {
-	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
-	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	background: #02A3DA; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#02A3DA, #0072AE);
+	background: -o-linear-gradient(#02A3DA, #0072AE);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#02A3DA), to(#0072AE)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#02A3DA, #0072AE);
+	background: linear-gradient(#02A3DA, #0072AE) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	clear: both;
 	display: block;
 	float: left;
-	margin: 0 auto 6px;
-	width: 100%;
+	margin: -7px auto 0;
+	height: 40px;
 	font-family: 'Oswald', Verdana, sans-serif;
-}
-
-	#access div {
-    margin: 0 7.6%;
 }
 
 
@@ -725,11 +744,11 @@ a.link_youtube {
 #access a {
 	color: #eee;
 	display: block;
-	line-height: 3.333em;
-	padding: 0 1.2125em;
+	font-size: 0.9em;
+    line-height: 1em;
+    padding: 1.2em;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 0.9em;
 }
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -826,8 +845,9 @@ display: none !important;
 /*  -------     Content  ------  */
 
 .slider-home {
-	width:100%;
-	height: 360px;
+	height: 340px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .conteudo-home {
@@ -910,10 +930,21 @@ img#wpstats {
 }
 
 h3.title-query-link {
+	color: #E6A142;
     height: 28px;
     text-transform: uppercase;
     width: auto;
+	padding: 10px 0;
 }
+
+h3.widget-title {
+	color: #E6A142;
+	}
+	
+h1.widget-title {
+	color: #E6A142;
+	}
+
 .cada-post-thumb {
 
 }
@@ -930,7 +961,10 @@ h3.title-query-link {
 
 
 #colophon {
-    clear: both;
+	background: none repeat scroll 0 0 #F1A118;
+    margin-top: 0px;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .coluna-sitemap-esquerda {
@@ -947,7 +981,7 @@ h3.title-query-link {
 }
 
 .coluna-sitemap-esquerda a {
-    color: #B3CB43;
+    color: #FFFFFF;
     font-family: 'Oswald', Verdana, sans-serif;
     font-size: 0.8em;
     font-weight: bolder;
@@ -969,7 +1003,7 @@ h3.title-query-link {
 }
 
 .coluna-sitemap-direita a {
-    color: #B3CB43;
+    color: #FFFFFF;
     font-family: 'Oswald', Verdana, sans-serif;
     font-size: 0.8em;
     font-weight: bolder;
@@ -1005,11 +1039,12 @@ h3.title-query-link {
 
 
 .site-info {
+    color: #FFFFFF;
     float: left;
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
-    text-align: left;
+    margin: 15px 0 0;
+    text-align: center;
     width: 100%;
 }
 
@@ -1017,6 +1052,7 @@ h3.title-query-link {
 
 a.query-agenda {
 text-decoration: none;
+padding: 10px 0;
 }
 
 #agenda-geral {
@@ -1037,7 +1073,7 @@ text-decoration: none;
 	 height: 80px;
 }
 #agenda-geral .data-evento-agenda {
-    background: none repeat scroll 0 0 #007B5B;
+    background: none repeat scroll 0 0 #0072B1;
     color: #FFFFFF;
     float: left;
     height: 60px;
@@ -1046,7 +1082,7 @@ text-decoration: none;
     width: 45px;
 }
 #agenda-geral .data-evento-agenda-single {
-    background: none repeat scroll 0 0 #007B5B;
+    background: none repeat scroll 0 0 #0072B1;
     color: #FFFFFF;
     height: 60px;
     margin: 10px 15px 0 0;
@@ -1095,7 +1131,7 @@ text-decoration: none;
 }
 
 #mes-agenda {
-    color: #B3CB43 !important;
+    color: #00C4DA !important;
     font-family: 'Oswald', Verdana, sans-serif;
     font-size: 1.1em;
     font-weight: bolder;

@@ -116,7 +116,7 @@ add_action( 'after_setup_theme', 'celulas_theme_setup' );
  */
 function celulas_theme_scripts() {
 	wp_enqueue_style( 'celulas-theme-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'celulas-theme-style',  get_template_directory_uri() . '/twentyeleven.css' );
+	// wp_enqueue_style( 'celulas-theme-style',  get_template_directory_uri() . '/twentyeleven.css', true );
 	
 	wp_enqueue_script( 'celulas-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'celulas-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -193,17 +193,17 @@ endif; // twentyeleven_admin_header_image
 		 *
 		 * @since Twenty Eleven 1.0
 		 *
-		 * @param int The default header image width in pixels. Default 1000.
+		 * @param int The default header image width in pixels. Default 985.
 		 */
-		'width' => apply_filters( 'twentyeleven_header_image_width', 1000 ),
+		'width' => apply_filters( 'twentyeleven_header_image_width', 985 ),
 		/**
 		 * Filter the Twenty Eleven default header image height.
 		 *
 		 * @since Twenty Eleven 1.0
 		 *
-		 * @param int The default header image height in pixels. Default 288.
+		 * @param int The default header image height in pixels. Default 280.
 		 */
-		'height' => apply_filters( 'twentyeleven_header_image_height', 288 ),
+		'height' => apply_filters( 'twentyeleven_header_image_height', 280 ),
 		// Support flexible heights.
 		'flex-height' => true,
 		// Random image rotation by default.

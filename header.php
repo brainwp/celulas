@@ -14,7 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_directory') ?>/twentyeleven.css" />
 <!-- Google Web Font -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,300italic,700italic|Oswald:700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" role="banner">
 		<div class="imagem-header">		
 			<a class="logo-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			
