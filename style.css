@@ -26,7 +26,7 @@ and Blueprint http://www.blueprintcss.org/
 -------------------------------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -103,7 +103,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -117,7 +117,9 @@ body .page-template-page-home-php {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Oswald', Verdana, sans-serif;
 }
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -702,6 +704,7 @@ a.link_youtube {
 	float: left;
 	margin: 0 auto 6px;
 	width: 100%;
+	font-family: 'Oswald', Verdana, sans-serif;
 }
 
 	#access div {
@@ -725,6 +728,8 @@ a.link_youtube {
 	line-height: 3.333em;
 	padding: 0 1.2125em;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
 }
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -780,19 +785,37 @@ a.link_youtube {
 
 
 
+/*  -------     Mapa  ------  */
+
+.mapa-home {
+	width:100%;
+	height: 555px;
+	background: none repeat scroll 0 0 #CCCCCC;
+	text-align: center;
+	font-size: 2em;
+}
+
+
+.fluid-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.fluid-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        border: none;
+}
+
+
 /*  -------     Content  ------  */
 
 .slider-home {
 	width:100%;
 	height: 360px;
-}
-
-.mapa-home {
-	width:100%;
-	height: 400px;
-	background: none repeat scroll 0 0 #CCCCCC;
-	text-align: center;
-	font-size: 2em;
 }
 
 .conteudo-home {
@@ -852,7 +875,7 @@ margin-right: 0;
 }
 
 .box p {
-    font-family: Arial,sans-serif;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin: 10px 20px 0;
@@ -865,7 +888,7 @@ a.veja {
 }
 .veja {
     float: left;
-    font-family: Arial, sans-serif;
+    font-family: 'Oswald', Verdana, sans-serif;
     font-style: italic;
 }
 
@@ -907,8 +930,8 @@ a.veja {
 
 .coluna-sitemap-esquerda a {
     color: #B3CB43;
-    font-family: Arial ,sans-serif;
-    font-size: 1.1em;
+    font-family: 'Oswald', Verdana, sans-serif;
+    font-size: 0.8em;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -928,8 +951,8 @@ a.veja {
 
 .coluna-sitemap-direita a {
     color: #B3CB43;
-    font-family: Arial ,sans-serif;
-    font-size: 1.1em;
+    font-family: 'Oswald', Verdana, sans-serif;
+    font-size: 0.8em;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -1049,7 +1072,7 @@ a.veja {
 
 #mes-agenda {
     color: #B3CB43 !important;
-    font-family: Arial,sans-serif;
+    font-family: 'Oswald', Verdana, sans-serif;
     font-size: 1.1em;
     font-weight: bolder;
     margin: -4px 0 2px;
@@ -1057,7 +1080,7 @@ a.veja {
     text-transform: uppercase;
 }
 #dia-agenda {
-    font-family: Arial,sans-serif;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 2em;
     margin: 0 auto;
     text-align: center;
@@ -1065,7 +1088,7 @@ a.veja {
 #leia-mais-agenda {
     background: none repeat scroll 0 0 #BABABA;
     float: right;
-    font-family: 'Passion One',sans-serif;
+    font-family: 'Oswald', Verdana, sans-serif;
     font-size: 0.8em;
     letter-spacing: 1px;
     margin-right: 6px;
