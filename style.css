@@ -676,14 +676,16 @@ padding: 0;
 }
 
 #midias-sociais {
-   float: right;
     height: 40px;
-    width: 50px;
-	padding-top: 3px;
+    overflow: hidden;
+    padding-top: 3px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 150px;
 }
 
-
-a.link_twitter {
+a.link_email {
     background: url("images/midias-sociais.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 35px;
     padding: 0 !important;
@@ -803,6 +805,11 @@ a.link_youtube {
 	font-weight: bold;
 }
 
+#access .busca {
+	width: 228px;
+	float: right;
+	margin: 5px 10px 0 0;
+}
 
 
 /*  -------     Mapa  ------  */

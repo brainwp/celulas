@@ -146,9 +146,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-//Adiciona o CustomPostType Agenda
-require_once ( get_stylesheet_directory() . '/agenda/requires-agenda.php' );
-
 if ( ! function_exists( 'twentyeleven_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
@@ -217,3 +214,5 @@ endif; // twentyeleven_admin_header_image
 		add_custom_image_header( $custom_header_support['wp-head-callback'], $custom_header_support['admin-head-callback'], $custom_header_support['admin-preview-callback'] );
 		add_custom_background();
 	}
+
+

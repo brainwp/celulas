@@ -24,7 +24,12 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" role="banner">
-		<div class="imagem-header">		
+		<div class="imagem-header">
+					<div id="midias-sociais">
+					<a href="<?php echo stripslashes (get_option('mo_email')); ?>" class="link_email" target="_blank"></a>
+					<a href="<?php echo stripslashes (get_option('mo_url_face')); ?>" class="link_facebook" target="_blank"></a>
+					<a href="<?php echo stripslashes (get_option('mo_url_youtube')); ?>" class="link_youtube" target="_blank"></a>
+					</div>
 			<a class="logo-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			
 			<?php
@@ -63,11 +68,9 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'celulas-theme' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		
-					<div id="midias-sociais">
-					<a href="<?php echo stripslashes (get_option('mo_url_twitter')); ?>" class="link_twitter" target="_blank"></a>
-					<a href="<?php echo stripslashes (get_option('mo_url_face')); ?>" class="link_facebook" target="_blank"></a>
-					<a href="<?php echo stripslashes (get_option('mo_url_youtube')); ?>" class="link_youtube" target="_blank"></a>
-					</div>
+                <div class="busca">
+                	<?php get_search_form(); ?>
+				</div><!-- .busca -->
 		
 		</nav><!-- #access -->
 	</header><!-- #masthead -->
