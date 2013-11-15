@@ -6,7 +6,7 @@ add_action('init', 'type_post_agenda');
 // Labels
 function type_post_agenda() {
 $labels = array(
-'name' => _x('Agenda', 'post type general name'),
+'name' => _x('Eventos', 'post type general name'),
 'singular_name' => _x('Evento', 'post type singular name'),
 'add_new' => _x('Novo Evento', 'Novo item'),
 'add_new_item' => __('Novo Evento'),
@@ -17,7 +17,7 @@ $labels = array(
 'not_found' => __('Nenhum registro encontrado'),
 'not_found_in_trash' => __('Nenhum registro encontrado na lixeira'),
 'parent_item_colon' => '',
-'menu_name' => 'Agenda'
+'menu_name' => 'Eventos'
 );
 
 $args = array(
@@ -34,14 +34,14 @@ $args = array(
 'supports' => array('title','editor','thumbnail')
 );
 
-register_post_type( 'agenda' , $args );
+register_post_type( 'eventos' , $args );
 flush_rewrite_rules();
 }
 
 // Adiciona Taxonomia
 register_taxonomy(
 'cat_agenda',
-'agenda',
+'eventos',
 array( 
 'label' => 'Adicionar Categorias ',
 'singular_label' => 'Categoria',
@@ -50,5 +50,6 @@ array(
 )
 );
 
-// Fim CustomPostType Agenda
+// Fim CustomPostType Eventos
+
 ?>

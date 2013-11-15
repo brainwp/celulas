@@ -3,7 +3,7 @@
     $meta_box = array(
 		'id' => 'my-meta-box',
 		'title' => 'Informa&ccedil;&otilde;es do Evento',
-		'page' => 'agenda',
+		'page' => 'eventos',
 		'context' => 'side',
 		'priority' => 'default',
 		'fields' => array(
@@ -16,88 +16,19 @@
 			),
 
 			array(
-			'name' => 'Hor&aacute;rio In&iacute;cio',
-			'desc' => 'Adicione o hor&aacute;rio de in&iacute;cio do evento',
+			'name' => 'Hor&aacute;rio',
+			'desc' => 'Adicione o hor&aacute;rio do evento',
 			'id' => $prefix . 'horario_inic',
 			'type' => 'text',
 			'std' => ''
 			),
-			
-			array(
-			'name' => 'Hor&aacute;rio Final',
-			'desc' => 'Adicione o hor&aacute;rio de t&eacute;rmino do evento',
-			'id' => $prefix . 'horario_fim',
-			'type' => 'text',
-			'std' => ''
-			),
 
-
-			array(
-			'name' => 'Local',
-			'desc' => 'Adicione o nome do local do evento',
-			'id' => $prefix . 'local',
-			'type' => 'text',
-			'std' => ''
-			),
-				
 			array(
 			'name' => 'Endere&ccedil;o',
 			'desc' => 'Adicione o endere&ccedil;o do evento',
 			'id' => $prefix . 'endereco',
 			'type' => 'text',
 			'std' => ''
-			),
-			
-			array(
-			'name' => 'Bairro',
-			'desc' => 'Adicione o bairro do evento',
-			'id' => $prefix . 'bairro',
-			'type' => 'text',
-			'std' => ''
-			),
-			
-			array(
-			'name' => 'Cidade',
-			'desc' => 'Adicione a cidade do evento',
-			'id' => $prefix . 'cidade',
-			'type' => 'text',
-			'std' => ''
-			),
-			
-			array(
-			'name' => 'Estado',
-			'id' => $prefix . 'estado',
-			'type' => 'select',
-			'options' => array(
-				'    ',
-				'AC',
-				'AL',
-				'AM',
-				'AP',
-				'BH',
-				'CE',
-				'DF',
-				'ES',
-				'GO',
-				'MA',
-				'MG',
-				'MS',
-				'MG',
-				'PA',
-				'PB',
-				'PE',
-				'PI',
-				'PR',
-				'RJ',
-				'RN',
-				'RO',
-				'RR',
-				'RS',
-				'SC',
-				'SE',
-				'SP',
-				'TO'				
-				)
 			),
 		)
     );
