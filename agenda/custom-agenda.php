@@ -1,5 +1,7 @@
 <?php
 
+
+
 // CustomPostType Agenda
 add_action('init', 'type_post_agenda');
 
@@ -51,5 +53,4 @@ array(
 );
 
 // Fim CustomPostType Eventos
-
 ?>

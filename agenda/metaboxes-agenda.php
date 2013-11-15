@@ -22,6 +22,7 @@
 			'type' => 'text',
 			'std' => ''
 			),
+			
 
 			array(
 			'name' => 'Endere&ccedil;o',
@@ -30,6 +31,7 @@
 			'type' => 'text',
 			'std' => ''
 			),
+						
 		)
     );
 	

@@ -967,6 +967,70 @@ h1.widget-title {
 
 /*  -------     Footer    ------  */
 
+#carousel_wrap {
+  	height: 300px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    width: 378px;
+}
+#carousel_wrap { margin: 15px 0 30px }
+
+.caroufredsel_wrapper {
+	width: 100% !important;
+}
+
+ul#carousel li {
+	display: block;
+	float: left;
+	height: auto;
+	margin: 0 3px;
+	max-width: 900px;
+	/*width: 100% !important;*/
+	position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+ul#carousel li img {
+	max-width: 100%;
+}
+ul#carousel li .content {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+}
+ul#carousel li .content > div {
+}
+ul#carousel li .content p { margin-bottom: 0; }
+
+ul#carousel li .content.center {
+	bottom: 40%;
+	text-align: center;
+	width: 100%;
+}
+
+#carousel_wrap a.prev {
+    background: url("images/setas.png") no-repeat scroll -5px center transparent;
+    display: block;
+    min-height: 70px;
+	position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	text-indent: -200px;
+}
+
+#carousel_wrap a.next {
+    background: url("images/setas.png") no-repeat scroll -75px center transparent;
+	display: block;
+	min-height: 70px;
+    position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	right: 0;
+	text-indent: -200px;
+}
+
 
 #colophon {
 	background: none repeat scroll 0 0 #F1A118;

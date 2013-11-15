@@ -27,9 +27,9 @@ array( "name" => "Facebook",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "Twitter",
-	"desc" => "Adicione a URL do Twitter",
-	"id" => $shortname."_url_twitter",
+array( "name" => "E-mail",
+	"desc" => "Adicione o E-mail",
+	"id" => $shortname."_email",
 	"type" => "text",
 	"std" => ""),
 
