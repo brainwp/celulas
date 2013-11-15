@@ -18,9 +18,12 @@
 					<div class="coluna-sitemap-esquerda">
 					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-1' ) ); ?>
 					</div>
+					<div class="coluna-sitemap-centro">
+					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
+					</div>
 					
 					<div class="coluna-sitemap-direita">
-					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-3' ) ); ?>
 					</div>
 
 		</div><!-- esquerda-footer-->

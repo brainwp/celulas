@@ -6,7 +6,7 @@
  */
  
  //Adiciona o CustomPostType Agenda
-require_once (get_stylesheet_directory() . '/requires-agenda.php');
+// require_once (get_stylesheet_directory() . '/requires-agenda.php');
 
 //Adiciona as Minhas Opções
 require_once (get_stylesheet_directory() . '/options/admin_options.php');
@@ -66,7 +66,8 @@ function celulas_theme_setup() {
 		array(
 		'primary' => __( 'Primary Menu', 'celulas-theme' ),
 		'rodape-menu-1' => __( 'Menu Rodape 1', 'celulas-theme' ),
-		'rodape-menu-2' => __( 'Menu Rodape 2', 'celulas-theme' )
+		'rodape-menu-2' => __( 'Menu Rodape 2', 'celulas-theme' ),
+		'rodape-menu-3' => __( 'Menu Rodape 3', 'celulas-theme' )
 		)
 		);
 		}
