@@ -1,0 +1,9 @@
+error_log
+.htaccess
+
+.vagrant
+Vagrantfile
+
+*.swp
+*.swo
+*~

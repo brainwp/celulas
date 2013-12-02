@@ -15,14 +15,14 @@
 		<div class="esquerda-footer">
 					
 					<!-- ----------------- Mapa DO SITE ----------------- -->
-					<div class="coluna-sitemap-esquerda">
+					<div class="coluna-sitemap esquerda">
 					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-1' ) ); ?>
 					</div>
-					<div class="coluna-sitemap-centro">
+					<div class="coluna-sitemap centro">
 					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-2' ) ); ?>
 					</div>
 					
-					<div class="coluna-sitemap-direita">
+					<div class="coluna-sitemap direita">
 					<?php wp_nav_menu( array( 'theme_location' => 'rodape-menu-3' ) ); ?>
 					</div>
 
@@ -34,7 +34,7 @@
     $parceiros = "";
     $parceiros = get_page_by_title( 'Parceiros' );
     $attachment_page = get_attachment_link($parceiros->ID); ?>
-			<p>Aqui entra slider de parceiros </p>
+			<p>Parceiros: </p>
              <div id="carousel_wrap">
 						<a class="prev" id="prev2" href="#"><span></span></a>
                         <a class="next" id="next2" href="#"><span></span></a>

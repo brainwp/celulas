@@ -6,25 +6,17 @@
  */
  
  //Adiciona o CustomPostType Agenda
-// require_once (get_stylesheet_directory() . '/requires-agenda.php');
+require_once (get_stylesheet_directory() . '/requires-agenda.php');
 
 //Adiciona as Minhas Opções
 require_once (get_stylesheet_directory() . '/options/admin_options.php');
 
 
 /**
-* Adiciona um tamanho de imagem
-*
-*/
-if ( function_exists( 'add_image_size' ) ) { 
-        add_image_size( 'destaqueimg', 310, 150, true );
-}
-
-/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) )
-	$content_width = 640; /* pixels */
+	$content_width = 1000; /* pixels */
 
 if ( ! function_exists( 'celulas_theme_setup' ) ) :
 /**
@@ -55,6 +47,15 @@ function celulas_theme_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+
+/**
+* Adiciona um tamanho de imagem
+*
+*/
+if ( function_exists( 'add_image_size' ) ) { 
+        add_image_size( 'destaqueimg', 310, 150, true );
+}
+
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -187,17 +188,17 @@ endif; // twentyeleven_admin_header_image
 		 *
 		 * @since Twenty Eleven 1.0
 		 *
-		 * @param int The default header image width in pixels. Default 985.
+		 * @param int The default header image width in pixels. Default 1000.
 		 */
-		'width' => apply_filters( 'twentyeleven_header_image_width', 985 ),
+		'width' => apply_filters( 'twentyeleven_header_image_width', 1000 ),
 		/**
 		 * Filter the Twenty Eleven default header image height.
 		 *
 		 * @since Twenty Eleven 1.0
 		 *
-		 * @param int The default header image height in pixels. Default 280.
+		 * @param int The default header image height in pixels. Default 350.
 		 */
-		'height' => apply_filters( 'twentyeleven_header_image_height', 280 ),
+		'height' => apply_filters( 'twentyeleven_header_image_height', 350),
 		// Support flexible heights.
 		'flex-height' => true,
 		// Random image rotation by default.
