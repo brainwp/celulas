@@ -68,9 +68,9 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'celulas-theme' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		
-                <div class="busca">
+                <div class="busca-menu">
                 	<?php get_search_form(); ?>
-				</div><!-- .busca -->
+		</div><!-- .busca -->
 		
 		</nav><!-- #access -->
 	</header><!-- #masthead -->

@@ -54,6 +54,7 @@ function celulas_theme_setup() {
 */
 if ( function_exists( 'add_image_size' ) ) { 
         add_image_size( 'destaqueimg', 310, 150, true );
+	add_image_size( 'parceirosimg', 200, 200, true );
 }
 
 

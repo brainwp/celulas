@@ -34,7 +34,7 @@
     $parceiros = "";
     $parceiros = get_page_by_title( 'Parceiros' );
     $attachment_page = get_attachment_link($parceiros->ID); ?>
-			<p>Parceiros: </p>
+			<span>Parceiros: </span>
              <div id="carousel_wrap">
 						<a class="prev" id="prev2" href="#"><span></span></a>
                         <a class="next" id="next2" href="#"><span></span></a>
@@ -54,7 +54,7 @@
                                 foreach ( $anexos as $anexo ) { ?>
                                 <?php 
                                     $attachment_id = $anexo->ID;
-                                    $image_attributes = wp_get_attachment_image_src( $attachment_id, 'thumb' );
+                                    $image_attributes = wp_get_attachment_image_src( $attachment_id, 'parceirosimg' );
                                 ?>
                             <li>                     
                             <img class="cada-slides" src="<?php echo $image_attributes[0]; ?>" alt="<?php echo apply_filters('the_title', $anexo->post_title); ?>">

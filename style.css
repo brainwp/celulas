@@ -50,7 +50,7 @@ html {
 	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: url("images/bg-geral.jpg") no-repeat scroll 0 0 #FFF;
+	background: url("images/bg-geral.jpg") repeat-y scroll 0 0 #FFF;
 }
 article,
 aside,
@@ -126,7 +126,6 @@ color: #00A3DA;
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-weight: bolder;
 }
 
 hr {
@@ -668,7 +667,7 @@ padding: 0;
 	width: 480px;
 	height:150px;
 	position: absolute;
-	margin: 10% 0 0 3em;
+	margin: 23% 0 0 3em;
 }
 
 .imagem-header {
@@ -800,10 +799,14 @@ a.link_youtube {
 	font-weight: bold;
 }
 
-#access .busca {
-	width: 228px;
+.busca-menu {
+	width: 190px;
 	float: right;
-	margin: 5px 10px 0 0;
+	margin: 16px 10px 0 0 !important;
+}
+
+.busca-menu input.search-submit{
+	display: none;
 }
 
 
@@ -885,7 +888,7 @@ margin-bottom: 2%;
     width: 31%;
 }
 
-.banco-celulas-home {
+.sidebar-home {
 width:30%;
 float: left;
 margin-right: 0;
@@ -934,14 +937,14 @@ img#wpstats {
 
 h3.title-query-link {
 	color: #E6A142;
-    height: 28px;
-    text-transform: uppercase;
-    width: auto;
+    	width: auto;
 	padding: 10px 0;
+	font-size: 2em;
 }
 
 h3.widget-title {
 	color: #E6A142;
+	font-size: 2em;
 	}
 	
 h1.widget-title {
@@ -963,11 +966,11 @@ h1.widget-title {
 /*  -------     Footer    ------  */
 
 #carousel_wrap {
-  	height: 300px;
+  	height: 200px;
     left: 0;
     overflow: hidden;
     position: relative;
-    width: 378px;
+    width: 200px;
 }
 #carousel_wrap { margin: 15px 0 30px }
 
@@ -978,10 +981,9 @@ h1.widget-title {
 ul#carousel li {
 	display: block;
 	float: left;
-	height: auto;
+	height: 200px;
 	margin: 0 3px;
-	max-width: 900px;
-	/*width: 100% !important;*/
+	width: 200px !important;
 	position: relative;
     text-align: center;
     overflow: hidden;
@@ -1106,7 +1108,6 @@ ul#carousel li .content.center {
 
 a.query-agenda {
 text-decoration: none;
-padding: 10px 0;
 }
 
 #agenda-geral {

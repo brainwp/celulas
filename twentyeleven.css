@@ -1666,7 +1666,6 @@ section.recent-posts .other-recent-posts li:after {
 .widget-title {
 	color: #666;
 	line-height: 1.6em;
-	text-transform: uppercase;
 	padding: 10px 0;
 }
 .widget ul {

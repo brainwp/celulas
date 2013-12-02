@@ -20,7 +20,7 @@ get_header(); ?>
 		
 		<div class="superior-home">
 			<div class="agenda-home">
-					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h3 class="title-query-link">Eventos</h3></a>	
+					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
 					<?php 
 					//Adiciona o Loop CPT Agenda
 					get_template_part( 'loop-agenda-home');
@@ -43,7 +43,7 @@ get_header(); ?>
 					<?php endwhile; endif; wp_reset_query(); ?>
 			</div>
 			
-			<div class="banco-celulas-home">
+			<div class="sidebar-home">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php  if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 					<?php endif; // end sidebar widget area ?>
