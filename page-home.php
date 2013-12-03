@@ -10,15 +10,37 @@ get_header(); ?>
 	<div class="slider-home">
 	<?php if(function_exists("insert_post_highlights")) insert_post_highlights(); ?>
 	</div>
+	
+	<div class="etiqueta-slider">O que Fazemos</div>
+	
 	<div class="mapa-home">
-<div class="fluid-wrapper">
-<iframe src="http://gator3131.hostgator.com/~luwkas/isabelsouzalima.com/#lat=-23.51688734846483&lng=-46.09135739843748&zoom=9" width="980" height="300"></iframe>
-</div>
+		<div class="fluid-wrapper">
+		<iframe src="http://gator3131.hostgator.com/~luwkas/isabelsouzalima.com/#lat=-23.51688734846483&lng=-46.09135739843748&zoom=9" width="980" height="300"></iframe>
+		</div>
 	</div>
+
+	<div class="etiqueta-mapa">Onde Fazemos</div>
 	
 	<div class="conteudo-home">
 		
 		<div class="superior-home">
+
+
+		<p>Aqui entra as Noticias de todas as Celulas</p>
+			<div class="cada-post">
+				<div class="cada-post-thumb"></div>
+				<div class="cada-post-content"></div>
+				<div class="cada-post-meta"></div>
+			</div><!-- .cada-post-home -->
+
+
+		</div><!-- .superior-home -->
+
+	<div class="etiqueta-celulas">O que acontece em cada uma</div>
+		
+		<div class="inferior-home">
+
+
 			<div class="agenda-home">
 					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
 					<?php 
@@ -48,16 +70,6 @@ get_header(); ?>
 					<?php  if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 					<?php endif; // end sidebar widget area ?>
 			</div>
-
-		</div><!-- .superior-home -->
-		
-		<div class="inferior-home">
-				<p>Aqui entra as Noticias de todas as Celulas</p>
-			<div class="cada-post">
-				<div class="cada-post-thumb"></div>
-				<div class="cada-post-content"></div>
-				<div class="cada-post-meta"></div>
-			</div><!-- .cada-post-home -->
 			
 		</div><!-- .inferior-home -->	
 		

@@ -79,7 +79,7 @@
         <div class="titulo-evento-agenda">
            	<?php the_title(); ?>
 				<div id="leia-mais-agenda">
-				<a href="<?php the_permalink() ?>">Mais info</a>
+				<a href="<?php the_permalink() ?>">+info</a>
 				</div>
 		</div><!-- .titulo-evento-agenda -->
             

@@ -818,6 +818,21 @@ a.link_youtube {
 	background: none repeat scroll 0 0 #CCCCCC;
 	text-align: center;
 	font-size: 2em;
+	margin-top: 30px;
+}
+
+
+.etiqueta-mapa{
+	background: #ff6700;
+	color: #fff;
+	font-size: 2.5em;
+	margin-left: 2em;
+	margin-top: -1em;
+	text-transform: uppercase;
+ 	padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 999;
 }
 
 #search {
@@ -851,17 +866,34 @@ display: none !important;
 /*  -------     Content  ------  */
 
 .slider-home {
-	height: 340px;
-    overflow: hidden;
-    width: 100%;
+	height: 300px;
+   	overflow: hidden;
+  	width: 100%;
 }
+
+#posthighlights_container {
+	    padding: 0 !important;
+}
+
+.etiqueta-slider {
+	background: #f5c326;
+	color: #fff;
+	font-size: 2.5em;
+	margin-left: 2em;
+	margin-top: -1em;
+	text-transform: uppercase;
+ 	padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
 
 .conteudo-home {
-	width:100%;
 	min-height: 300px;
-	margin: 0;
+	margin: 20px;
+	max-width: 1000px;
 }
-
 
 .page-destaque-home p {
 margin: 0;
@@ -871,7 +903,23 @@ margin: 0;
 	width:100%;
 	min-height: 300px;
 	margin: 0;
-	 overflow: hidden;
+	overflow: hidden;
+	background: none repeat scroll 0 0 #00b7d5;
+	margin: 30px 0 0;
+}
+
+
+.etiqueta-celulas {
+	background: #00a1b2;
+	color: #fff;
+	font-size: 2.5em;
+	margin-left: 2em;
+	margin-top: -1em;
+	text-transform: uppercase;
+ 	padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 999;
 }
 
 .agenda-home {
@@ -889,7 +937,7 @@ margin-bottom: 2%;
 }
 
 .sidebar-home {
-width:30%;
+width:32%;
 float: left;
 margin-right: 0;
 }
@@ -898,10 +946,8 @@ margin-right: 0;
 	width:100%;
 	min-height: 300px;
 	margin: 0;
-	background: none repeat scroll 0 0 #CCCCCC;
-	text-align: center;
-	font-size: 2em;
-	 overflow: hidden;
+	overflow: hidden;
+	margin: 30px 0 0;
 }
 
 .thumb-destaque {
@@ -1030,7 +1076,8 @@ ul#carousel li .content.center {
 
 
 #colophon {
-	background: none repeat scroll 0 0 #F1A118;
+
+	background:url("images/bg_rodape.png") repeat scroll 0 0 #8b2519;	
     margin-top: 0px;
     overflow: hidden;
     padding: 20px;
@@ -1128,7 +1175,7 @@ text-decoration: none;
 	 height: 80px;
 }
 #agenda-geral .data-evento-agenda {
-    background: none repeat scroll 0 0 #0072B1;
+    background: none repeat scroll 0 0 #0095ad;
     color: #FFFFFF;
     float: left;
     height: 60px;
@@ -1186,7 +1233,7 @@ text-decoration: none;
 }
 
 #mes-agenda {
-    color: #00C4DA !important;
+    color: #00b7d5 !important;
     font-family: 'Oswald', Verdana, sans-serif;
     font-size: 1.1em;
     font-weight: bolder;
@@ -1209,8 +1256,7 @@ text-decoration: none;
     margin-right: 6px;
     margin-top: 7px;
     padding: 0 6px;
-    text-transform: uppercase;
-    width: 80px;
+    width: 45px;
 }
 #leia-mais-agenda.archive {
     margin-bottom: 2px;
