@@ -6,8 +6,7 @@ jQuery(function() {
 		auto: {
 			play: true,
 		},
-		responsive: true,
-		align: "center",
+		responsive: false,
 		items: {
 			visible: 1,
 			start: "random"
