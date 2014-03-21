@@ -27,7 +27,7 @@ get_header(); ?>
 
 
 			<div class="agenda-home">
-					<a class="query-agenda" href="<?php echo home_url( '/Agenda' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
+					<a class="query-agenda" href="<?php echo home_url( '/blog/agenda' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
 					<?php 
 					//Adiciona o Loop CPT Agenda
 					get_template_part( 'loop', 'agenda' );

@@ -63,7 +63,7 @@ footer, header, hgroup, menu, nav, section {
 #primary {
 	float: left;
 	margin: 0 -26.4% 0 0;
-	width: 100%;
+	width: 70%;
 }
 #content {
 	/* margin: 0 34% 0 7.6%; 
@@ -73,6 +73,10 @@ footer, header, hgroup, menu, nav, section {
 	float: right;
 	margin-right: 7.6%;
 	width: 18.8%;
+}
+
+#primary .full-width {
+	width: 100%;
 }
 
 /* Singular */
