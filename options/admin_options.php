@@ -47,13 +47,6 @@ array( "type" => "close"),
 	"type" => "section"),
 array( "type" => "open"),
 
-array( "name" => "Eventos exibidos",
-	"desc" => "Adicione a quantidade de Eventos exibidos na Home",
-	"id" => $shortname."_qtd_eventos",
-	"type" => "select",  
-    "options" => array('3','4','5','6','7','8'),  
-    "std" => "3"),
- 
 array( "name" => "Destaque Box",
     "desc" => "Selecione a Pagina em Destaque do Box da Home",  
     "id" => $shortname."_box01",

@@ -2,23 +2,23 @@ jQuery(function($) {
 	$( "#agenda-event-date" ).datepicker({
 dateFormat: 'yy/mm/dd',
 dayNames: [
-'Domingo','Segunda','TerÃ§a','Quarta','Quinta','Sexta','SÃ¡bado','Domingo'
+'Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'
 ],
 dayNamesMin: [
 'D','S','T','Q','Q','S','S','D'
 ],
 dayNamesShort: [
-'Dom','Seg','Ter','Qua','Qui','Sex','SÃ¡b','Dom'
+'Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'
 ],
 monthNames: [
-'Janeiro','Fevereiro','MarÃ§o','Abril','Maio','Junho','Julho','Agosto','Setembro',
+'Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro',
 'Outubro','Novembro','Dezembro'
 ],
 monthNamesShort: [
 'Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set',
 'Out','Nov','Dez'
 ],
-nextText: 'PrÃ³ximo',
+nextText: 'Próximo',
 prevText: 'Anterior'
 
 });

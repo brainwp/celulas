@@ -3,7 +3,7 @@
     $meta_box = array(
 		'id' => 'my-meta-box',
 		'title' => 'Informa&ccedil;&otilde;es do Evento',
-		'page' => 'eventos',
+		'page' => 'agenda',
 		'context' => 'side',
 		'priority' => 'default',
 		'fields' => array(
@@ -16,13 +16,20 @@
 			),
 
 			array(
-			'name' => 'Hor&aacute;rio',
-			'desc' => 'Adicione o hor&aacute;rio do evento',
+			'name' => 'Hor&aacute;rio In&iacute;cio',
+			'desc' => 'Adicione o hor&aacute;rio de in&iacute;cio do evento',
 			'id' => $prefix . 'horario_inic',
 			'type' => 'text',
 			'std' => ''
 			),
 			
+			array(
+			'name' => 'Hor&aacute;rio Final',
+			'desc' => 'Adicione o hor&aacute;rio de t&eacute;rmino do evento',
+			'id' => $prefix . 'horario_fim',
+			'type' => 'text',
+			'std' => ''
+			),
 
 			array(
 			'name' => 'Endere&ccedil;o',
@@ -31,7 +38,58 @@
 			'type' => 'text',
 			'std' => ''
 			),
-						
+			
+			array(
+			'name' => 'Bairro',
+			'desc' => 'Adicione o bairro do evento',
+			'id' => $prefix . 'bairro',
+			'type' => 'text',
+			'std' => ''
+			),
+			
+			array(
+			'name' => 'Cidade',
+			'desc' => 'Adicione a cidade do evento',
+			'id' => $prefix . 'cidade',
+			'type' => 'text',
+			'std' => ''
+			),
+			
+			array(
+			'name' => 'Estado',
+			'id' => $prefix . 'estado',
+			'type' => 'select',
+			'options' => array(
+				'    ',
+				'AC',
+				'AL',
+				'AM',
+				'AP',
+				'BH',
+				'CE',
+				'DF',
+				'ES',
+				'GO',
+				'MA',
+				'MG',
+				'MS',
+				'MG',
+				'PA',
+				'PB',
+				'PE',
+				'PI',
+				'PR',
+				'RJ',
+				'RN',
+				'RO',
+				'RR',
+				'RS',
+				'SC',
+				'SE',
+				'SP',
+				'TO'				
+				)
+			),
 		)
     );
 	
@@ -142,13 +200,13 @@ function mytheme_show_box() {
  * Adiciona os devidos jQuery DatePicker para a Agenda.
  */
 function agenda_events_jquery_datepicker() {
-
-	// Carregar jQuery
-	wp_enqueue_script ('jquery-ui-datepicker');
-	wp_enqueue_style ('jquery estilo', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+	wp_enqueue_script(
+		'jquery-ui-datepicker',
+		get_bloginfo('stylesheet_directory') . '/agenda/datepicker/jquery-ui-1.8.11.custom.min.js',
+		array('jquery')
+	);
  
 	wp_enqueue_script(
-		// Tradução do DatePicker
 		'agenda-datepicker',
 		get_bloginfo('stylesheet_directory') . '/agenda/datepicker/agenda-datepicker.js',
 		array('jquery', 'jquery-ui-datepicker')

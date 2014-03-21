@@ -25,7 +25,7 @@ add_action( 'draft_agenda_hook', 'draft_agenda' );
 function draft_agenda()
 {
 	$args = array(
-	 'post_type' => 'eventos'
+	 'post_type' => 'agenda'
 	);
 
 	$query  = new WP_Query($args);

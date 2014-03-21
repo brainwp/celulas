@@ -23,29 +23,14 @@ get_header(); ?>
 	
 	<div class="conteudo-home">
 		
-		<div class="superior-home">
-
-
-		<p>Aqui entra as Noticias de todas as Celulas</p>
-			<div class="cada-post">
-				<div class="cada-post-thumb"></div>
-				<div class="cada-post-content"></div>
-				<div class="cada-post-meta"></div>
-			</div><!-- .cada-post-home -->
-
-
-		</div><!-- .superior-home -->
-
-	<div class="etiqueta-celulas">O que acontece em cada uma</div>
-		
 		<div class="inferior-home">
 
 
 			<div class="agenda-home">
-					<a class="query-agenda" href="<?php echo home_url( '/eventos' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
+					<a class="query-agenda" href="<?php echo home_url( '/Agenda' ); ?>"><h3 class="title-query-link">Agenda</h3></a>	
 					<?php 
 					//Adiciona o Loop CPT Agenda
-					get_template_part( 'loop-agenda-home');
+					get_template_part( 'loop', 'agenda' );
 					?>
 			</div>
 			
@@ -56,7 +41,7 @@ get_header(); ?>
 				?>				
 
 				<?php query_posts('pagename='.$box01.'&showposts=1'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<a  class="query-agenda" href="<?php the_permalink(); ?>"><h3 class="title-query-link"><?php the_title(); ?></h3></a>
+					<a  class="query-agenda" href="<?php the_permalink(); ?>"><h3 class="title-query-link"><?php the_title(); ?></h3></a>
 								<div class="thumb-destaque">
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('destaqueimg'); ?></a>
 								</div><!-- .thumb-destaque -->
